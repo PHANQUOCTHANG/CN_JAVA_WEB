@@ -1,0 +1,16 @@
+<!-- src/main/resources/templates/fragments/sidebar.html -->
+<div th:fragment="sidebar" class="bg-dark text-white vh-100 p-3" style="width: 15%;"
+     xmlns:th="http://www.w3.org/1999/xhtml">
+    <h2 class="text-white">ADMIN</h2>
+    <ul class="nav flex-column">
+        <li class="nav-item mb-2">
+            <a th:href="@{/admin/dashboard}" class="nav-link text-white">Tổng quan</a>
+        </li>
+        <li class="nav-item mb-2">
+            <a th:href="@{/admin/product}" class="nav-link text-white">Danh sách sản phẩm</a>
+        </li>
+        <li class="nav-item mb-2">
+            <a th:href="@{/admin/product_category}" class="nav-link text-white">Danh sách danh mục</a>
+        </li>
+    </ul>
+</div>
